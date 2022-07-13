@@ -1,0 +1,17 @@
+/*bacground picture to pahe1*/
+#page1{
+    background: url("book.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: mediumblue;
+    text-align: center;
+    font-family: "Lobster",serif;
+}
+/*error message*/
+#error{
+    background-color: chocolate;
+    width: 50%;
+    margin: 20px auto;
+    font-size: 20px;
+}
