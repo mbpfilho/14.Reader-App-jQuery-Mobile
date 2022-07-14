@@ -90,6 +90,7 @@ $(function(){
 
         //change css
         $("#result").css("fontSize",slidervalue);
+        $("#result").css("height",slidervalue*1.5);
 
         //change text on screen
         $("#fontsize").text(slidervalue);
