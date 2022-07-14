@@ -4,14 +4,24 @@
     background-position: center center;
     background-attachment: fixed;
     background-size: 100% 100%;
-    color: mediumblue;
+    color: cornflowerblue;
     text-align: center;
     font-family: "Lobster",serif;
 }
 /*error message*/
 #error{
-    background-color: chocolate;
+    background-color: #E20415;
     width: 50%;
     margin: 20px auto;
-    font-size: 20px;
+    font-size: 125%;
+}
+/*the read word*/
+#result{
+    font-size: 300%;
+    background-color: rgba(255,255,255,.8);
+    padding: 5% 0;
+}
+/*hide slide number input*/
+.full-width-slider input{
+    display: none !important;
 }
