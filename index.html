@@ -30,29 +30,33 @@
                     <p>Efficient reading experience</p>
                 </div>
 
-                <!-- font size and speed -->
-                <div class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <div>FONT SIZE: <span id="fontsize">48</span>px</div>
+                <div id="controls">
+                    <!-- font size and speed -->
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <div>FONT SIZE: <span id="fontsize">48</span>px</div>
+                        </div>
+                        <div class="ui-block-b">
+                            <div><span id="speed">300</span> WORDS PER MINUTE</div>
+                        </div>
                     </div>
-
-                    <div class="ui-block-b">
-                        <div><span id="speed">300</span> WORDS PER MINUTE</div>
+                    <div class="ui-grid-a">
+                        <div class="ui-block-a">
+                            <form class="full-width-slider">
+                                <input type="range" name="fontsizeslider" id="fontsizeslider" min="20" max="100" value="48" step="4" data-highlight="true">
+                            </form>
+                        </div>
+                        <div class="ui-block-b">
+                            <form class="full-width-slider">
+                                <input type="range" name="speedslider" id="speedslider" min="60" max="600" value="300" step="30" data-highlight="true">
+                            </form>
+                        </div>
                     </div>
-                </div>
-
-                <div class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <form class="full-width-slider">
-                            <input type="range" name="fontsizeslider" id="fontsizeslider" min="20" max="100" value="48" step="4">
-                        </form>
-                    </div>
-
-                    <div class="ui-block-b">
-                        <form class="full-width-slider">
-                            <input type="range" name="speedslider" id="speedslider" min="60" max="600" value="300" step="30">
-                        </form>
-                    </div>
+                    <!-- progress -->
+                    <form class="full-width-slider">
+                        <label for="progressslider">PROGRESS <span id="percentage">0</span>%</label>
+                        <input type="range" name="progressslider" id="progressslider" min="0" max="100" value="0" data-highlight="true">
+                    </form>
                 </div>
 
                 <!-- the read word -->
@@ -66,7 +70,7 @@
                 <!--user inputs-->
                 <div id="inputs">
                     <!-- text input -->
-                    <textarea name="" id="userInput" cols="30" rows="10"></textarea>
+                    <textarea id="userInput" rows="3"></textarea>
                     <!-- buttons -->
                     <button id="start">Start Reading</button>
                     <button id="new">New</button>
@@ -160,5 +164,7 @@
                 </div>
             </div>
         </div><!--page3-->
+
+        <script src="index.js"></script>
     </body>
 </html>
